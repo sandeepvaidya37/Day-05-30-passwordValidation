@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home .circle1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     width: 70vw;
+     height: 70vw;
+     border-radius: 50%;
+     z-index: 2;
+
+}
+.home .circle1 .top{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home .circle1 .bottom{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home .circle1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.home .circle1 .top img{
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.bottom img:nth-child(1){
+   
+    transform: translate(-50%, -50%) scale(2);
+    
+}
+.bottom img:nth-child(2){
+   
+    transform: translate(-50%, -50%) scale(1.5);
+    
+}
+.bottom img:nth-child(3){
+   
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+.home .circle1 .top img:nth-child(1){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(2);
+}
+.home .circle1 .top img:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1.5);
+}
+.home .circle1 .top img:nth-child(3){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.smcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 43vw;
+    height: 43vw;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 50%;
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    position: absolute;
+    z-index: 4;
+}
+@font-face {
+    font-family: "Neue Haas Grotesk Text Pro";
+    src: url(601401c0c20f6600a666f09f.ttf);
+}
+.nav h1{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Neue Haas Grotesk Text Pro";
+}
+
+.nav img{
+    width: 102px;
+    height: 34px;
+    object-fit: cover;
+    object-position: center;
+}
+.btmnav{
+    padding: 30px 50px;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    display: flex;
+    z-index: 5;
+    width: 100vw;
+}
+.btmnav img{
+    width: 90px;
+    height: 43px;
+}
+.centerimg{
+    width: 30vw;
+    height: 37vh;
+    font-family:"Neue Haas Grotesk Text Pro" ;
+    position: absolute;
+    z-index: 5;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 20px;
+}
+.centerimg .cimg{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+.centerimg  .cimg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.centerimg h5{
+    font-size: 12px;
+}
+.second{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.Gal{
+    position: absolute;
+    bottom: 0.1%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 11vw;
+    font-weight: normal;
+    font-family: "Neue Haas Grotesk Text Pro" ;
+    text-transform: uppercase;
+    z-index: 8;
+    pointer-events: none;
+}
+.gola{
+    scale: 0.8;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cba8ab;
+    z-index: 10;
+    position: absolute;
+}
+.pink{
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%) rotate(10deg);
+    font-size: 11vw;
+    font-weight: normal;
+    font-family: "Neue Haas Grotesk Text Pro" ;
+    text-transform: uppercase;
+    z-index: 10;
+    pointer-events: none;
+}
+.floating{
+    color: #fff;
+    height: 350px;
+    width: 350px;
+    background-color: #D5A7B4;
+    position: absolute;
+    left: 0;
+    top: 110%;
+}
+@font-face {
+    font-family: "DS-Digital";
+    src: url(6013d9f2a0ac3100b61cffde.ttf);
+}
+.flbt{
+    margin-left: 10%;
+    margin-top: 27%;
+    font-family: "DS-Digital";
+}
+.flbt h4 sub{
+    font-size: 30px;
+    font-weight: 500;
+}
+.fltop{
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 35%;
+    margin-left: 10%;
+}
+.sd{
+   margin-left: 40px;
+   line-height: 20px;
+}
+.stop{
+    overflow: hidden;
+    position: relative;
+    height: 60%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+
+}
+.sbtm{
+    position: relative;
+    height: 40%;
+    width: 100%;
+
+}
+.sbtm .d1{
+    position: absolute;
+    font-size: 3.5vw;
+    font-family:"Neue Haas Grotesk Text Pro" ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sbtm .d2{
+    opacity: 0;
+    position: absolute;
+    font-size: 3vw;
+    font-family:"Neue Haas Grotesk Text Pro" ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sbtmi{
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    display: flex;
+    z-index: 78;
+    width: 100vw;
+    padding: 0px 30px;
+}
+.cr1{
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    top: 150%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180,170,213);
+    
+}
+.cr2{
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    top: 220%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(213,167,180);
+}
+.stop h1{
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    font-family:"Neue Haas Grotesk Text Pro" ;
+    font-size: 28vw;
+    z-index: 99999;
+    color: #ffff;
+}
+.sbtmi img{
+    height: 60px;
+    width: 100px;
+}
